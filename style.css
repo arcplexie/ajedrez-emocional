@@ -1,0 +1,134 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    /*Index grid*/
+    .contenedor{
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "header header navi navi"
+        "banner banner banner banner"
+        "curso curso curso curso"
+        "modulo modulo modulo modulo";
+        gap:10px;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    .contenedor .header{
+        grid-area: header;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .contenedor .header img{
+        width: 15%;
+        height: auto;
+        border-radius: 10px;
+        padding: 2%;
+        
+    }
+
+    .contenedor .navi{
+        grid-area: navi;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    .contenedor .navi .navbar{
+        padding: 2%;
+    }
+
+    .contenedor .navi .nav-link{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        color: black;
+    }
+
+    .contenedor .banner{
+        grid-area: banner;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor .banner img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .contenedor .curso{
+        grid-area: curso;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    .contenedor .curso .titulocurso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor .curso .titulocurso h1{
+        text-align: center;
+        color: black;
+        border-radius: 10px;
+        font-family: 'Arima', cursive;
+    }
+
+    .contenedor .curso .titulocurso img{
+        width: 10%;
+        height: auto;
+        margin: auto;
+    }
+
+
+
+    .contenedor .curso p{
+        text-align: justify;
+        padding: 3%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+
+    }
+    
+    .contenedor .modulo{
+        grid-area: modulo;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contenedor .modulo .card{
+        margin-bottom: 1%;
+        background-color: rgb(32, 31, 31);
+    }
+
+    .contenedor .modulo .card-title{
+        text-align: center;
+        font-family: 'Arima', cursive;
+        color: white;
+    }
+
+    .contenedor .modulo .card-text{
+        text-align: justify;
+        padding: 3%;
+        color: silver;
+        font-family: 'Nunito', sans-serif;
+    }
+
+
